@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/image-01-2e26da0c7d.png">
+<title>Momentos con Magia · Videos de invitación personalizados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fdf2f4; --bg2:#fae3e9; --surface:#ffffff; --surface2:#fff8f9;
+  --ink:#41222f; --ink2:#7d5568; --line:#f2d3dc;
+  --coral:#ce2e63; --coral-d:#ad1f50; --teal:#a8700c; --gold:#e9a426; --pink:#bc3a6e; --plum:#55203c;
+  --radius:20px; --shadow:0 18px 40px rgba(150,35,80,.16);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#211219; --bg2:#2a1822; --surface:#2e1a24; --surface2:#38222d; --ink:#fbeef3; --ink2:#dcbccb; --line:#4d3040; --teal:#eec25e; --plum:#40182b; --shadow:0 18px 40px rgba(0,0,0,.45); }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Outfit",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","Outfit",sans-serif;line-height:1.05;letter-spacing:-.01em;margin:0}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--coral-d)}
+.kicker::before{content:"✦";color:var(--gold);font-size:1rem;line-height:1}
+.sec-head{max-width:680px;margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.7rem,4.5vw,2.4rem);font-weight:800;margin:10px 0 10px}
+.sec-head p{color:var(--ink2);font-size:1.05rem;margin:0}
+
+/* HERO */
+.hero{position:relative;padding:0 0 10px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cpath d='M32 12l2.8 7.7L42.5 22.5l-7.7 2.8L32 33l-2.8-7.7L21.5 22.5l7.7-2.8z' fill='%23d99a26' fill-opacity='.30'/%3E%3Cpath d='M118 78l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z' fill='%23ce2e63' fill-opacity='.16'/%3E%3Ccircle cx='112' cy='118' r='2.2' fill='%23d99a26' fill-opacity='.35'/%3E%3Ccircle cx='52' cy='102' r='1.8' fill='%23ffffff' fill-opacity='.55'/%3E%3C/svg%3E"),radial-gradient(900px 480px at 85% -10%, rgba(233,164,38,.30), transparent 60%),radial-gradient(760px 460px at -10% 20%, rgba(206,46,99,.16), transparent 60%)}
+.portada-wrap{position:relative;z-index:1;line-height:0}
+.portada-wrap::after{content:"";position:absolute;left:0;right:0;bottom:0;height:clamp(20px,4.5vw,56px);background:linear-gradient(to bottom, rgba(253,242,244,0) 0%, rgba(253,242,244,.55) 62%, var(--bg) 100%);pointer-events:none}
+@media (prefers-color-scheme: dark){
+  .portada-wrap::after{background:linear-gradient(to bottom, rgba(33,18,25,0) 0%, rgba(33,18,25,.45) 62%, var(--bg) 100%)}
+}
+.portada-banner{width:100%;height:auto;display:block;border:0;border-radius:0;box-shadow:none}
+.hero .hero-grid{margin-top:8px}
+.spark{position:absolute;color:var(--gold);pointer-events:none;animation:twinkle 3.2s ease-in-out infinite alternate;text-shadow:0 0 12px rgba(233,164,38,.65);z-index:0}
+.spark.s1{top:120px;right:6%;font-size:1.5rem}
+.spark.s2{top:300px;left:2.5%;font-size:1.1rem;animation-delay:1.1s;color:var(--coral)}
+.spark.s3{top:64px;left:44%;font-size:.95rem;animation-delay:2s}
+.spark.s4{bottom:120px;right:3%;font-size:1rem;animation-delay:.6s;color:var(--coral)}
+@keyframes twinkle{from{opacity:.25;transform:scale(.8) rotate(0deg)}to{opacity:1;transform:scale(1.15) rotate(20deg)}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.86rem;font-weight:600;box-shadow:0 4px 14px rgba(150,35,80,.08)}
+.pill b{color:var(--coral)}
+.hero h1{font-size:clamp(2.15rem,6vw,3.55rem);font-weight:800;margin:18px 0 14px}
+.hero h1 .hl{color:var(--coral);box-shadow:inset 0 -.32em 0 rgba(233,164,38,.45)}
+.hero .lead{font-size:1.13rem;color:var(--ink2);max-width:34rem;margin:0 0 22px}
+.hero .lead strong{color:var(--ink)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s ease, background .15s}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--coral);color:#fff}
+.btn-primary:hover{background:var(--coral-d)}
+.btn-ghost{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.hero-points{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:.93rem;color:var(--ink2);font-weight:500}
+.hero-points span{display:inline-flex;gap:7px;align-items:center}
+.hero-points i{font-style:normal;color:var(--teal);font-weight:800}
+.phone{justify-self:center;width:min(540px,94vw);background:#2e1624;border:1px solid rgba(233,164,38,.45);border-radius:24px;padding:10px;box-shadow:var(--shadow)}
+.phone video{border-radius:16px;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.phone-cap{text-align:center;font-size:.88rem;color:var(--ink2);margin-top:14px}
+.phone-cap b{color:var(--ink)}
+
+/* MUESTRAS */
+.muestras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.muestra{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.muestra.pop{border:2px solid var(--coral);box-shadow:var(--shadow)}
+.muestra video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.muestra .m-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.muestra .m-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.muestra h3{font-size:1.12rem}
+.muestra .m-price{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.45rem;color:var(--coral);white-space:nowrap}
+.muestra .m-ej{font-weight:700;font-size:.92rem;margin:6px 0 2px}
+.muestra p{margin:0 0 10px;font-size:.93rem;color:var(--ink2)}
+.muestra .m-ant{font-size:.9rem;font-weight:600;color:var(--teal);margin-bottom:16px}
+.muestra .btn{margin-top:auto;width:100%}
+.muestras-note{text-align:center;color:var(--ink2);font-size:.93rem;margin-top:16px}
+
+/* IMÁGENES */
+.img-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:820px}
+.img-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column}
+.img-card.pop{border:2px solid var(--teal)}
+.img-card h3{font-size:1.12rem}
+.img-card .amount{font-family:"Bricolage Grotesque";font-size:2.2rem;font-weight:800;margin:6px 0 2px}
+.img-card .amount small{font-size:1rem;color:var(--ink2);font-family:"Outfit";font-weight:600}
+.img-card p{color:var(--ink2);font-size:.95rem;margin:0 0 14px}
+.img-card ul{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:8px;font-size:.95rem}
+.img-card li{display:flex;gap:9px}
+.img-card li::before{content:"✓";color:var(--teal);font-weight:800;flex:none}
+.img-card .btn{margin-top:auto;width:100%}
+.img-card .ejemplo{margin:0 0 16px;border-radius:14px;overflow:hidden;background:var(--bg2);position:relative}
+.ej-tag{position:absolute;top:10px;left:10px;z-index:2;background:var(--gold);color:#241a00;font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.img-card .ejemplo img,.img-card .ejemplo video{width:100%;height:auto;aspect-ratio:1/2;object-fit:cover}
+.img-card .ejemplo-cap{font-size:.85rem;font-weight:600;color:var(--teal);text-align:center;margin:0 0 16px}
+.price .anticipo{font-size:.9rem;font-weight:700;color:var(--teal);margin:0 0 10px}
+
+/* STRIP */
+.strip{margin-top:36px;background:var(--plum);color:#f7f0e2;border-radius:var(--radius);padding:20px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.strip b{display:block;font-family:"Bricolage Grotesque";font-size:1.35rem;color:var(--gold)}
+.strip span{font-size:.88rem;opacity:.92}
+
+/* TEMAS */
+.temas-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.tema{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.tema img{width:100%;aspect-ratio:3/4.1;object-fit:cover}
+.tema div{padding:13px 14px 15px}
+.tema h3{font-size:1.02rem;font-weight:700}
+.tema p{margin:4px 0 0;font-size:.87rem;color:var(--ink2)}
+.tema.real{outline:2px solid var(--gold);outline-offset:-2px}
+.badge{display:inline-block;background:var(--gold);color:#241a00;font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:3px 9px;margin-bottom:6px}
+
+/* PRECIOS */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.price{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column}
+.price.pop{border:2px solid var(--coral);box-shadow:var(--shadow);position:relative}
+.price .tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.04em;padding:5px 14px;border-radius:999px;white-space:nowrap}
+.price h3{font-size:1.15rem}
+.price .amount{font-family:"Bricolage Grotesque";font-size:2.5rem;font-weight:800;margin:8px 0 2px}
+.price .amount small{font-size:1rem;color:var(--ink2);font-family:"Outfit";font-weight:600}
+.price .desc{color:var(--ink2);font-size:.95rem;margin:0 0 16px}
+.price ul{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:9px;font-size:.96rem}
+.price li{display:flex;gap:9px}
+.price li::before{content:"✓";color:var(--teal);font-weight:800;flex:none}
+.price .btn{margin-top:auto;width:100%}
+.price-note{text-align:center;color:var(--ink2);font-size:.93rem;margin-top:16px}
+
+/* PASOS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:var(--surface2);border:1px solid var(--line);border-radius:18px;padding:20px}
+.step .num{width:38px;height:38px;border-radius:12px;background:var(--teal);color:#fff;display:grid;place-items:center;font-family:"Bricolage Grotesque";font-weight:800;font-size:1.05rem;margin-bottom:12px}
+.step:nth-child(2) .num{background:var(--coral)} .step:nth-child(3) .num{background:var(--gold);color:#241a00} .step:nth-child(4) .num{background:var(--pink)}
+.step h3{font-size:1.05rem;margin-bottom:6px}
+.step p{margin:0;font-size:.93rem;color:var(--ink2)}
+
+/* BUILDER */
+.builder{background:var(--surface);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr}
+.builder-form{padding:28px}
+.builder-form h2{font-size:1.6rem;margin-bottom:6px}
+.builder-form>p{color:var(--ink2);margin:0 0 20px;font-size:.98rem}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-weight:600;font-size:.9rem}
+.field input,.field select,.field textarea{font:inherit;color:var(--ink);background:var(--surface2);border:1.5px solid var(--line);border-radius:12px;padding:11px 13px;min-height:48px;width:100%}
+.field textarea{min-height:74px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:transparent}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill-btn{min-height:44px;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface2);font:inherit;font-weight:600;cursor:pointer;color:var(--ink)}
+.pill-btn[aria-pressed="true"]{background:var(--plum);color:#fff;border-color:var(--plum)}
+.builder-side{background:var(--plum);color:#f3ecdd;padding:28px;display:flex;flex-direction:column}
+.builder-side h3{color:var(--gold);font-size:1.05rem;letter-spacing:.02em;margin-bottom:12px}
+#resumen{white-space:pre-wrap;font-size:.95rem;line-height:1.6;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:16px;flex:1}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 4px}
+.total b{font-family:"Bricolage Grotesque";font-size:1.9rem;color:#fff}
+.total span{font-size:.9rem;opacity:.85}
+.side-actions{display:grid;gap:10px;margin-top:12px}
+.btn-light{background:#fff;color:#241d38}
+.btn-outline{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.copied{font-size:.88rem;color:#ffd98a;min-height:1.2em;text-align:center}
+
+/* NECESITAS + FAQ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.check-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.check-card h2{font-size:1.45rem;margin-bottom:14px}
+.check-list{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.check-list li{display:flex;gap:11px;font-size:.99rem}
+.check-list li::before{content:"";flex:none;width:22px;height:22px;border-radius:7px;background:rgba(233,164,38,.20);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8700c' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E");background-size:14px;background-position:center;background-repeat:no-repeat;margin-top:1px}
+.check-list small{display:block;color:var(--ink2)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:13px 0;min-height:48px;display:flex;align-items:center}
+details p{margin:0 0 15px;color:var(--ink2);font-size:.96rem}
+
+/* PLAN */
+
+footer{padding:34px 0 46px;text-align:center;color:var(--ink2);font-size:.92rem}
+footer strong{color:var(--ink)}
+
+@media (max-width:900px){
+  .spark.s3{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .phone{transform:none}
+  .temas-grid{grid-template-columns:repeat(2,1fr)}
+  .temas-grid .tema:last-child{grid-column:1/-1}
+  .temas-grid .tema:last-child img{aspect-ratio:16/9}
+  .price-grid,.steps,.muestras-grid,.img-grid{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .builder{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+  section{padding:42px 0}
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .btn{transition:none} .spark{animation:none} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="spark s1" aria-hidden="true">✦</span>
+  <span class="spark s2" aria-hidden="true">✦</span>
+  <span class="spark s3" aria-hidden="true">✦</span>
+  <span class="spark s4" aria-hidden="true">✦</span>
+  <div class="portada-wrap">
+    <img class="portada-banner" src="assets/image-02-d054b206f5.png" alt="Momentos con Magia — Invitaciones en video personalizadas y más… Portada rosa con estrellitas doradas, varita mágica, globos dorados y pastel" width="2352" height="896" fetchpriority="high">
+  </div>
+  <div class="wrap hero-grid" style="position:relative;z-index:1">
+    <div>
+      <span class="pill">🎬 Hechos a tu temática · <b>videos desde $120</b> · imágenes desde $60</span>
+      <h1>Tu fiesta empieza con un video que <span class="hl">nadie se quiere perder</span></h1>
+      <p class="lead">Invitaciones en video <strong>personalizadas con nombre, foto, voz y la temática favorita</strong> del festejado. Se comparten por WhatsApp en segundos y tus invitados sienten la fiesta desde que lo abren. ¿Prefieres algo más sencillo? También hacemos la <strong>imagen de invitación</strong>.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#pedido">Armar mi pedido →</a>
+        <a class="btn btn-ghost" href="#precios">Ver paquetes y precios</a>
+      </div>
+      <div class="hero-points">
+        <span><i>✓</i> Entrega en 24–48 hrs</span>
+        <span><i>✓</i> Listo para compartir por WhatsApp</span>
+        <span><i>✓</i> 50% de anticipo y el resto al entregar</span>
+      </div>
+    </div>
+    <div>
+      <div class="phone">
+        <video src="assets/video-03-9c6d6685fd.mp4" poster="assets/image-04-6bf37b419e.jpg" controls playsinline preload="metadata" aria-label="Video de muestra del paquete Favorito: invitación de cumpleaños de Mateo con soldado espacial y voz de personaje, datos de ejemplo"></video>
+      </div>
+      <p class="phone-cap"><b>Muestra del Favorito ▶</b> Dale play: el personaje invita con su voz. Es el cumpleaños de Mateo, con datos de ejemplo.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="strip">
+      <div><b>10 seg</b><span>de video, directo al punto</span></div>
+      <div><b>$120 · $250 · $350</b><span>tres paquetes para elegir</span></div>
+      <div><b>$60 / $80</b><span>imagen sencilla o animada</span></div>
+      <div><b>24–48 hrs</b><span>tiempo de entrega</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="muestras" style="padding-bottom:6px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Muestras</span>
+      <h2>Así se ve cada paquete</h2>
+      <p>Dale play a cada una y compara: la diferencia está en la voz, los efectos y lo que incluye. Todas llevan los datos de tu evento.</p>
+    </div>
+    <div class="muestras-grid">
+      <article class="muestra">
+        <video src="assets/video-05-3ad994d194.mp4" poster="assets/image-06-34c650fbc7.jpg" controls playsinline preload="none" aria-label="Muestra del paquete Básico: tarjeta animada del cumpleaños de Sofía, con texto y música, sin voz"></video>
+        <div class="m-body">
+          <div class="m-top"><h3>Básico</h3><span class="m-price">$120</span></div>
+          <p class="m-ej">Ejemplo: cumpleaños de Sofía</p>
+          <p>Tarjeta animada con texto y música. Sencillo, bonito y sin voz de personaje.</p>
+          <p class="m-ant">Apartas con $60 (50%)</p>
+          <a class="btn btn-ghost" href="#pedido" data-pick="Básico">Quiero el Básico</a>
+        </div>
+      </article>
+      <article class="muestra">
+        <video src="assets/muestra-del-paquete-b-sico-tarjeta-animada-del-cumplea-os-de-video-07-30e51966ef.mp4" poster="assets/image-08-3f62467e3e.jpg" controls playsinline preload="none" aria-label="Muestra del paquete Estrella: XV años de Valeria, video con voz de personaje y animación, sin imagen incluida"></video>
+        <div class="m-body">
+          <div class="m-top"><h3>Estrella · Con voz</h3><span class="m-price">$250</span></div>
+          <p class="m-ej">Ejemplo: XV años de Valeria</p>
+          <p>Con voz invitando a tus invitados, animación</p>
+          <p class="m-ant">Apartas con $125 (50%)</p>
+          <a class="btn btn-ghost" href="#pedido" data-pick="Estrella">Quiero el Estrella</a>
+        </div>
+      </article>
+      <article class="muestra pop">
+        <video src="assets/video-03-9c6d6685fd.mp4" poster="assets/image-04-6bf37b419e.jpg" controls playsinline preload="none" aria-label="Muestra del paquete Favorito: cumpleaños de Mateo con soldado espacial, voz de personaje, animación y efectos"></video>
+        <div class="m-body">
+          <div class="m-top"><h3>Favorito · El más completo</h3><span class="m-price">$350</span></div>
+          <p class="m-ej">Ejemplo: cumpleaños de Mateo</p>
+          <p>Con voz del personaje, animación y efectos, incluye una imagen de invitación a juego: diseñada con el mismo tema y colores del video, para que todo combine.</p>
+          <p class="m-ant">Apartas con $175 (50%)</p>
+          <a class="btn btn-primary" href="#pedido" data-pick="Favorito">Quiero el Favorito</a>
+        </div>
+      </article>
+    </div>
+    <p class="muestras-note">Las muestras traen datos de ejemplo: donde dice «Aquí va la dirección» van la dirección y los datos de tu evento.</p>
+  </div>
+</section>
+
+<section id="tematicas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Temáticas</span>
+      <h2>Una para cada festejo</h2>
+      <p>¿No ves la tuya? Se arma desde tu idea: un personaje, un deporte, una serie, lo que le encante al festejado.</p>
+    </div>
+    <div class="temas-grid">
+      <article class="tema real">
+        <img src="assets/image-04-6bf37b419e.jpg" alt="Soldado espacial de videojuego junto a la tarjeta de invitación de ejemplo del cumpleaños de Mateo">
+        <div><span class="badge">Ver muestra ↑</span><h3>Videojuegos y personajes</h3><p>Soldados espaciales, superhéroes, anime y más, con voz del personaje.</p></div>
+      </article>
+      <article class="tema">
+        <img src="assets/soldado-espacial-de-videojuego-junto-a-la-tarjeta-de-invitac-image-09-e24fe9956e.webp" alt="Ilustración de dinosaurios con gorros de fiesta, globos y confeti">
+        <div><h3>Cumpleaños infantil</h3><p>Dinosaurios, princesas, unicornios, safari… colores y diversión total.</p></div>
+      </article>
+      <article class="tema">
+        <img src="assets/ilustraci-n-de-dinosaurios-con-gorros-de-fiesta-globos-y-con-image-10-a6a56e873d.webp" alt="Ilustración de quinceañera con vestido rosa, corona, flores y papel picado">
+        <div><h3>XV años</h3><p>Elegante y de ensueño, con los colores y el estilo de la quinceañera.</p></div>
+      </article>
+      <article class="tema">
+        <img src="assets/ilustraci-n-de-quincea-era-con-vestido-rosa-corona-flores-y--image-11-a551d93463.webp" alt="Ilustración en acuarela de elefante bebé con globos pastel para baby shower">
+        <div><h3>Baby shower y bautizo</h3><p>Tierno y delicado para anunciar la llegada más esperada.</p></div>
+      </article>
+      <article class="tema">
+        <img src="assets/ilustraci-n-en-acuarela-de-elefante-beb-con-globos-pastel-pa-image-12-58511fcf0d.webp" alt="Ilustración de pareja de novios bajo un arco de flores al atardecer">
+        <div><h3>Bodas y eventos</h3><p>Romántico y sofisticado para el gran día y cualquier celebración.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="precios" style="padding-top:10px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Paquetes</span>
+      <h2>Precios claros, sin sorpresas</h2>
+      <p>Precios de lanzamiento. Todos los paquetes se apartan con el 50% y el resto se paga al entregar tu video.</p>
+    </div>
+    <div class="price-grid">
+      <article class="price">
+        <h3>Básico</h3>
+        <p class="amount">$120 <small>MXN</small></p>
+        <p class="anticipo">Apartas con $60 (50%)</p>
+        <p class="desc">Para invitar bonito y sin complicarte.</p>
+        <ul>
+          <li>Video sencillo de 10 segundos aprox.</li>
+          <li>Tarjeta animada con texto, como la muestra de Sofía</li>
+          <li>Temática a elegir del catálogo</li>
+          <li>Nombre, fecha, hora y lugar</li>
+          <li>Música de fondo, sin voz de personaje</li>
+          <li>1 corrección de datos</li>
+        </ul>
+        <a class="btn btn-ghost" href="#pedido" data-pick="Básico">Elegir Básico</a>
+      </article>
+      <article class="price">
+        <h3>Estrella</h3>
+        <p class="amount">$250 <small>MXN</small></p>
+        <p class="anticipo">Apartas con $125 (50%)</p>
+        <p class="desc">Como la muestra de Valeria. Con voz invitando a tus invitados, animación.</p>
+        <ul>
+          <li>Video de 10 segundos aprox., como la muestra</li>
+          <li>Voz personalizada según la temática</li>
+          <li>Animación del personaje y de la tarjeta</li>
+          <li>Foto del festejado en el video</li>
+          <li>Frase especial a tu gusto</li>
+          <li>2 correcciones incluidas</li>
+          <li>No incluye imagen de invitación</li>
+        </ul>
+        <a class="btn btn-ghost" href="#pedido" data-pick="Estrella">Elegir Estrella</a>
+      </article>
+      <article class="price pop">
+        <span class="tag">EL FAVORITO</span>
+        <h3>Favorito</h3>
+        <p class="amount">$350 <small>MXN</small></p>
+        <p class="anticipo">Apartas con $175 (50%)</p>
+        <p class="desc">El más completo: como la muestra de Mateo, con voz, animación, efectos e imagen a juego.</p>
+        <ul>
+          <li>Todo lo del paquete Estrella</li>
+          <li>Más efectos y animación</li>
+          <li>Guion creado desde tu idea</li>
+          <li>Imagen de invitación a juego incluida</li>
+          <li>Entrega prioritaria en 24 hrs</li>
+        </ul>
+        <p class="desc"><strong>¿Qué es la imagen a juego?</strong> Es la imagen de invitación diseñada con el mismo tema y colores de tu video, para que video e imagen combinen.</p>
+        <a class="btn btn-primary" href="#pedido" data-pick="Favorito">Elegir el Favorito</a>
+      </article>
+    </div>
+    <p class="price-note">Extras disponibles: versión adicional $80 · entrega urgente (mismo día) $70 · ¿Solo quieres la imagen? Sencilla $60 · animada $80 · <a href="#imagenes" style="font-weight:700;color:var(--teal)">Ver los ejemplos de imagen ↓</a></p>
+  </div>
+</section>
+
+<section id="imagenes" style="padding-top:10px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">También imágenes</span>
+      <h2>¿Solo quieres la imagen de invitación?</h2>
+      <p>También se hacen imágenes de invitación a tu temática, listas para compartir por WhatsApp. Puedes pedirla sola o agregarla a tu video.</p>
+    </div>
+    <div class="img-grid">
+      <article class="img-card">
+        <h3>Imagen sencilla</h3>
+        <p class="amount">$60 <small>MXN</small></p>
+        <figure class="ejemplo">
+          <span class="ej-tag">Ejemplo</span>
+          <img src="assets/image-13-4f09b6611c.webp" alt="Ejemplo de imagen sencilla de invitación: cumpleaños de Mateo, sábado 12 de diciembre, 4:00 PM, Zócalo de San Pedro Cholula" decoding="async">
+        </figure>
+        <p class="ejemplo-cap">Ejemplo: cumpleaños de Mateo</p>
+        <p>La invitación en una sola imagen, bonita y directa, con todos los datos de tu evento.</p>
+        <ul>
+          <li>Diseño a tu temática</li>
+          <li>Nombre, dirección, fecha y hora del evento</li>
+          <li>Lista para enviar por WhatsApp</li>
+          <li>+ $10 el botón con el link de la ubicación</li>
+        </ul>
+        <button class="btn btn-ghost" type="button" data-pick-img="Imagen sencilla">Agregar a mi pedido · $60</button>
+      </article>
+      <article class="img-card pop">
+        <h3>Imagen animada</h3>
+        <p class="amount">$80 <small>MXN</small></p>
+        <figure class="ejemplo">
+          <video src="assets/ejemplo-de-imagen-sencilla-de-invitaci-n-cumplea-os-de-mateo-video-14-e774190547.mp4" poster="assets/image-15-a3b86408b9.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Ejemplo de imagen animada de invitación: la misma invitación del cumpleaños de Mateo, animada, sin audio ni voz"></video>
+        </figure>
+        <p class="ejemplo-cap">Ejemplo: la misma invitación de Mateo, pero animada</p>
+        <p>Tu invitación con movimiento: una imagen animada y bonita.</p>
+        <ul>
+          <li>Diseño a tu temática</li>
+          <li>Nombre, dirección, fecha y hora del evento</li>
+          <li>Imagen animada con movimiento</li>
+          <li>Lista para enviar por WhatsApp</li>
+        </ul>
+        <button class="btn btn-primary" type="button" data-pick-img="Imagen animada">Agregar a mi pedido · $80</button>
+      </article>
+    </div>
+    <p class="price-note" style="text-align:left">El paquete Favorito ya incluye la imagen de invitación a juego, sin costo extra.</p>
+  </div>
+</section>
+
+<section style="padding-top:6px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Así de fácil</span>
+      <h2>Cómo funciona</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Arma tu pedido</h3><p>Llena el formulario de abajo con los datos de tu evento y tu temática.</p></div>
+      <div class="step"><div class="num">2</div><h3>Confirma y aparta</h3><p>Revisamos tu pedido contigo y lo apartas con el 50% de anticipo.</p></div>
+      <div class="step"><div class="num">3</div><h3>Recibe tu avance</h3><p>Te llega una vista previa para revisar datos y pedir tu corrección.</p></div>
+      <div class="step"><div class="num">4</div><h3>¡A compartir!</h3><p>Liquidas el resto y recibes tu video listo para WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pedido" style="padding-top:6px">
+  <div class="wrap">
+    <div class="builder">
+      <div class="builder-form">
+        <span class="kicker">Pedido</span>
+        <h2>Arma tu pedido en 1 minuto</h2>
+        <p>Al terminar, copia el resumen y pégalo en el WhatsApp o mensaje donde vas a pedir tu video. Queda todo clarito, sin idas y vueltas.</p>
+        <form id="form" autocomplete="off">
+          <div class="f-grid">
+            <div class="field">
+              <label for="tipo">Tipo de evento</label>
+              <select id="tipo">
+                <option>Cumpleaños infantil</option>
+                <option>XV años</option>
+                <option>Baby shower</option>
+                <option>Bautizo / Primera Comunión</option>
+                <option>Boda</option>
+                <option>Cumpleaños de adulto</option>
+                <option>Otro festejo</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="tematica">Temática</label>
+              <input id="tematica" type="text" placeholder="Ej. videojuego espacial, dinosaurios…">
+            </div>
+            <div class="field">
+              <label for="nombre">Nombre del festejado(a)</label>
+              <input id="nombre" type="text" placeholder="Ej. Sofía">
+            </div>
+            <div class="field">
+              <label for="edad">Edad que cumple (si aplica)</label>
+              <input id="edad" type="text" inputmode="numeric" placeholder="Ej. 7 años">
+            </div>
+            <div class="field">
+              <label for="fecha">Fecha del evento</label>
+              <input id="fecha" type="date">
+            </div>
+            <div class="field">
+              <label for="hora">Hora</label>
+              <input id="hora" type="text" placeholder="Ej. 3:00 pm">
+            </div>
+            <div class="field full">
+              <label for="lugar">Lugar del evento</label>
+              <input id="lugar" type="text" placeholder="Ej. Salón Los Arcos">
+            </div>
+            <div class="field full">
+              <label for="frase">Frase o mensaje especial (opcional)</label>
+              <textarea id="frase" placeholder="Ej. ¡No faltes, te esperamos!"></textarea>
+            </div>
+            <div class="field full">
+              <label>Paquete</label>
+              <div class="pills" id="paquetes">
+                <button type="button" class="pill-btn" data-paq="Básico" data-precio="120" aria-pressed="false">Básico · $120</button>
+                <button type="button" class="pill-btn" data-paq="Estrella" data-precio="250" aria-pressed="false">Estrella · $250</button>
+                <button type="button" class="pill-btn" data-paq="Favorito" data-precio="350" aria-pressed="true">Favorito · $350</button>
+              </div>
+            </div>
+            <div class="field full">
+              <label>Extras (toca para agregar)</label>
+              <div class="pills" id="extras">
+                <button type="button" class="pill-btn" data-extra="Versión adicional" data-precio="80" aria-pressed="false">+ Versión adicional · $80</button>
+                <button type="button" class="pill-btn" data-extra="Entrega urgente (mismo día)" data-precio="70" aria-pressed="false">+ Urgente · $70</button>
+                <button type="button" class="pill-btn" data-extra="Imagen sencilla" data-precio="60" data-group="imagen" aria-pressed="false">+ Imagen sencilla · $60</button>
+                <button type="button" class="pill-btn" data-extra="Imagen animada" data-precio="80" data-group="imagen" aria-pressed="false">+ Imagen animada · $80</button>
+                <button type="button" class="pill-btn" data-extra="Botón con link de ubicación" data-precio="10" aria-pressed="false">+ Botón ubicación · $10</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <aside class="builder-side">
+        <h3>RESUMEN DE TU PEDIDO</h3>
+        <div id="resumen" aria-live="polite"></div>
+        <div class="total"><span>Total estimado</span><b id="total">$350</b></div>
+        <p style="margin:0;font-size:.86rem;opacity:.85">Apartas con el 50% y el resto al entregar.</p>
+        <div class="side-actions">
+          <button class="btn btn-light" id="copiar" type="button">Copiar resumen del pedido</button>
+          <button class="btn btn-outline" id="descargar" type="button">Descargar como archivo</button>
+          <div class="copied" id="copied" role="status"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:6px">
+  <div class="wrap two-col">
+    <div class="check-card">
+      <span class="kicker">Antes de pedir</span>
+      <h2>Qué necesito de ti</h2>
+      <ul class="check-list">
+        <li><span>Los datos del evento<small>Nombre, fecha, hora y lugar, tal como quieres que salgan.</small></span></li>
+        <li><span>1 foto bonita del festejado(a)<small>De frente y con buena luz, para que luzca en el video.</small></span></li>
+        <li><span>Tu temática o una imagen de referencia<small>Un personaje, colores o una idea: con eso se arma el estilo.</small></span></li>
+        <li><span>La frase que dirá el personaje<small>O elige una de las sugeridas y la adaptamos a tu evento.</small></span></li>
+        <li><span>El 50% de anticipo para apartar<small>Tu lugar en la fila de producción queda confirmado.</small></span></li>
+      </ul>
+    </div>
+    <div>
+      <span class="kicker">Dudas frecuentes</span>
+      <h2 style="font-size:1.45rem;margin:10px 0 16px">Preguntas y respuestas</h2>
+      <details>
+        <summary>¿En cuánto tiempo está listo mi video?</summary>
+        <p>En 24 a 48 horas desde que confirmas datos y anticipo. Si lo necesitas el mismo día, agrega la entrega urgente por $70.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir dos versiones, una para la escuela y otra para la familia?</summary>
+        <p>¡Sí! Agrega una versión adicional por $80 a cualquier paquete. Cambian el lugar, la hora y el mensaje.</p>
+      </details>
+      <details>
+        <summary>¿Y si un dato sale mal?</summary>
+        <p>Por eso recibes una vista previa antes de la entrega final. Tu paquete incluye correcciones de datos (1 en Básico, 2 en los demás).</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir solo la imagen, sin video?</summary>
+        <p>¡Claro! La imagen sencilla cuesta $60: diseño a tu temática, con nombre, dirección, fecha y hora del evento, lista para enviar por WhatsApp; por $10 más puedes agregar el botón con el link de la ubicación. La imagen animada cuesta $80: es una imagen con movimiento, sin audio ni voz. Y si pides el paquete Favorito, la imagen a juego ya va incluida.</p>
+      </details>
+      <details>
+        <summary>¿Cómo lo recibo y cómo lo comparto?</summary>
+        <p>Recibes tu video o imagen listos para enviar por WhatsApp, Facebook o donde quieras. Pesan poco y se ven perfectos en el celular.</p>
+      </details>
+      <details>
+        <summary>¿La temática puede ser la que yo quiera?</summary>
+        <p>Sí. Videojuegos, series, deportes, princesas, lo que le encante al festejado. Si tienes una foto o imagen de referencia, mucho mejor.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/image-01-2e26da0c7d.png" alt="" width="512" height="512" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);margin:0 auto 10px">
+    <strong>Videos de invitación personalizados</strong><br>
+    Hechos con cariño, a tu temática y listos para compartir. Precios en pesos mexicanos, de lanzamiento.
+  </div>
+</footer>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var fields = ['tipo','tematica','nombre','edad','fecha','hora','lugar','frase'];
+  var paquete = { nombre:'Favorito', precio:350 };
+  var extrasSel = [];
+
+  function fechaBonita(v){
+    if(!v) return '';
+    var p = v.split('-'); if(p.length!==3) return v;
+    var meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    var dias = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+    var d = new Date(parseInt(p[0],10), parseInt(p[1],10)-1, parseInt(p[2],10));
+    return dias[d.getDay()] + ' ' + parseInt(p[2],10) + ' de ' + meses[parseInt(p[1],10)-1] + ' de ' + p[0];
+  }
+  function money(n){ return '$' + n.toLocaleString('es-MX'); }
+  function moneyExact(n){ return Number.isInteger(n) ? money(n) : '$' + n.toLocaleString('es-MX',{minimumFractionDigits:2, maximumFractionDigits:2}); }
+
+  function render(){
+    var v = {};
+    fields.forEach(function(f){ v[f] = $(f).value.trim(); });
+    var total = paquete.precio + extrasSel.reduce(function(s,e){ return s + e.precio; }, 0);
+    var lines = [];
+    lines.push('¡Hola! Quiero un video de invitación personalizado 🎬');
+    lines.push('');
+    lines.push('• Evento: ' + v.tipo);
+    if(v.nombre) lines.push('• Festejado(a): ' + v.nombre + (v.edad ? ' — cumple ' + v.edad : ''));
+    if(v.tematica) lines.push('• Temática: ' + v.tematica);
+    if(v.fecha) lines.push('• Fecha: ' + fechaBonita(v.fecha));
+    if(v.hora) lines.push('• Hora: ' + v.hora);
+    if(v.lugar) lines.push('• Lugar: ' + v.lugar);
+    if(v.frase) lines.push('• Frase especial: “' + v.frase + '”');
+    lines.push('• Paquete: ' + paquete.nombre + ' (' + money(paquete.precio) + ')');
+    extrasSel.forEach(function(e){ lines.push('• Extra: ' + e.nombre + ' (' + money(e.precio) + ')'); });
+    lines.push('');
+    lines.push('Total estimado: ' + money(total) + ' — aparto con ' + moneyExact(total/2) + ' de anticipo (50%).');
+    $('resumen').textContent = lines.join('\n');
+    $('total').textContent = money(total);
+    return lines.join('\n');
+  }
+
+  fields.forEach(function(f){ $(f).addEventListener('input', render); $(f).addEventListener('change', render); });
+
+  function bindPills(containerId, isPaquete){
+    var c = $(containerId);
+    c.addEventListener('click', function(ev){
+      var btn = ev.target.closest('.pill-btn'); if(!btn) return;
+      if(isPaquete){
+        c.querySelectorAll('.pill-btn').forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+        btn.setAttribute('aria-pressed','true');
+        paquete = { nombre: btn.dataset.paq, precio: parseInt(btn.dataset.precio,10) };
+      } else {
+        var on = btn.getAttribute('aria-pressed') === 'true';
+        if(!on && btn.dataset.group){
+          c.querySelectorAll('.pill-btn[data-group="' + btn.dataset.group + '"]').forEach(function(b){
+            if(b !== btn && b.getAttribute('aria-pressed') === 'true'){
+              b.setAttribute('aria-pressed','false');
+              extrasSel = extrasSel.filter(function(e){ return e.nombre !== b.dataset.extra; });
+            }
+          });
+        }
+        btn.setAttribute('aria-pressed', on ? 'false' : 'true');
+        var item = { nombre: btn.dataset.extra, precio: parseInt(btn.dataset.precio,10) };
+        if(on){ extrasSel = extrasSel.filter(function(e){ return e.nombre !== item.nombre; }); }
+        else { extrasSel.push(item); }
+      }
+      render();
+    });
+  }
+  bindPills('paquetes', true);
+  bindPills('extras', false);
+
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var name = a.dataset.pick;
+      document.querySelectorAll('#paquetes .pill-btn').forEach(function(b){
+        var match = b.dataset.paq === name;
+        b.setAttribute('aria-pressed', match ? 'true' : 'false');
+        if(match) paquete = { nombre: b.dataset.paq, precio: parseInt(b.dataset.precio,10) };
+      });
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-pick-img]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var name = b.dataset.pickImg;
+      document.querySelectorAll('#extras .pill-btn').forEach(function(p){
+        if(p.dataset.extra === name && p.getAttribute('aria-pressed') !== 'true'){ p.click(); }
+      });
+    });
+  });
+
+  $('copiar').addEventListener('click', function(){
+    var text = render();
+    function done(){ $('copied').textContent = '✓ Copiado. Ahora pégalo en tu mensaje y envíalo.'; setTimeout(function(){ $('copied').textContent=''; }, 4000); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done).catch(function(){ fallback(); });
+    } else { fallback(); }
+    function fallback(){
+      var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch(e){ $('copied').textContent = 'Selecciona el resumen y cópialo manualmente.'; }
+      document.body.removeChild(ta);
+    }
+  });
+
+  $('descargar').addEventListener('click', function(){
+    var blob = new Blob([render()], { type:'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a'); a.href = url; a.download = 'mi-pedido-video-invitacion.txt';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 800);
+    $('copied').textContent = '✓ Archivo descargado con tu pedido.';
+    setTimeout(function(){ $('copied').textContent=''; }, 4000);
+  });
+
+  render();
+})();
+</script>
+<script>
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function(v){ v.removeAttribute('autoplay'); v.pause(); });
+}
+</script>
+</body>
+</html>
